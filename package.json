@@ -2,6 +2,7 @@
   "name": "cats-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alexander970.github.io/meow_app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,13 +16,17 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "latest",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.1.1",
     "style-loader": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+   
   },
   "eslintConfig": {
     "extends": [
